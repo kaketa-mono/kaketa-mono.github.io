@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>欠けた暦</title>
+
+  <style>
+    body {
+      background-color: #f5f1e8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 80px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      gap: 8px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .calendar a {
+      border: 1px solid black;
+      padding: 20px;
+      text-align: center;
+      color: black;
+      text-decoration: none;
+    }
+
+    .empty {
+      border: 1px solid black;
+      padding: 20px;
+    }
+
+    .hidden-day {
+      border: 1px solid black;
+      padding: 20px;
+      color: transparent;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>欠けた暦</h1>
+
+  <div class="calendar">
+
+    <!-- 1週間目：日・月は空白、火曜日から1日 -->
+    <div class="empty"></div>
+    <div class="empty"></div>
+
+    <a href="day1.html">1</a>
+    <a href="day2.html">2</a>
+    <a href="day3.html">3</a>
+    <a href="day4.html">4</a>
+    <a href="day5.html">5</a>
+
+    <!-- 2週間目 -->
+    <a href="day6.html">6</a>
+    <a href="day7.html">7</a>
+    <a href="day8.html">8</a>
+    <a href="day9.html">9</a>
+    <a href="day10.html">10</a>
+    <a href="day11.html">11</a>
+    <a href="day12.html">12</a>
+
+    <!-- 3週間目 -->
+    <a href="day13.html">13</a>
+    <a href="day14.html">14</a>
+    <a href="day15.html">15</a>
+    <a href="day16.html">16</a>
+    <a href="day17.html">17</a>
+    <a href="day18.html">18</a>
+    <a href="day19.html">19</a>
+
+    <!-- 4週間目 -->
+    <a href="day20.html">20</a>
+    <a href="day21.html">21</a>
+    <a href="day22.html">22</a>
+    <a href="day23.html">23</a>
+    <a href="day24.html">24</a>
+    <a href="day25.html">25</a>
+    <a href="day26.html">26</a>
+
+    <!-- 5週間目 -->
+    <a href="day27.html">27</a>
+    <a href="day28.html">28</a>
+
+    <!-- 29日目：数字は見えないがマスは存在する -->
+    <a href="day29.html" class="hidden-day"></a>
+
+    <!-- 残りの空白 -->
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+
+  </div>
+
+</body>
+</html>
