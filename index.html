@@ -9,26 +9,40 @@
 
     body {
       background-color: #f5f1e8;
+      margin: 0;
+      padding: 20px;
     }
 
     h1 {
       font-size: 80px;
       text-align: center;
+      margin-bottom: 50px;
     }
 
     .calendar {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(5, 1fr);
       gap: 8px;
       max-width: 700px;
       margin: auto;
     }
 
-    .calendar a,
-    .empty {
+    .calendar a {
       border: 1px solid black;
       padding: 20px;
       text-align: center;
+      color: black;
+      text-decoration: none;
+    }
+
+    .empty {
+      padding: 20px;
+    }
+
+    .hidden-day {
+      border: none !important;
+      padding: 20px;
     }
 
   </style>
@@ -40,9 +54,11 @@
 
   <div class="calendar">
 
+    <!-- 最初の2マス -->
     <div class="empty"></div>
     <div class="empty"></div>
 
+    <!-- 1〜28日 -->
     <a href="day1.html">1</a>
     <a href="day2.html">2</a>
     <a href="day3.html">3</a>
@@ -71,6 +87,15 @@
     <a href="day26.html">26</a>
     <a href="day27.html">27</a>
     <a href="day28.html">28</a>
+
+    <!-- 見えない29日 -->
+    <a href="day29.html" class="hidden-day"></a>
+
+    <!-- 残り5マス -->
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
 
   </div>
 
